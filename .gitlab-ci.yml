@@ -6,7 +6,7 @@ variables:
 
 .default-job-template:
   stage: test
-  image: gcc:13       # образ с g++ и make
+  image: gcc:13
   before_script:
     - apt-get update -y
     - apt-get install -y cmake git
