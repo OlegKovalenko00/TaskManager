@@ -127,12 +127,3 @@ void TaskManager::delete_task_on_num(int id) {
     tasks.erase(it);
     std::cout << "Задача " << id << " удалена.\n";
 }
-
-int main () {
-    TaskManager a = TaskManager();
-    a.show_tasks();
-    a.delete_task_on_num(1);
-    a.add_task();
-    a.add_task();
-    a.show_tasks();
-}
